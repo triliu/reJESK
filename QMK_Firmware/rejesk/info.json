@@ -1,0 +1,407 @@
+{
+  "manufacturer": "Trent G. Marbach",
+  "keyboard_name": "JESK56",
+  "maintainer": "triliu",
+  "diode_direction": "COL2ROW",
+  "features": {
+    "bootmagic": true,
+    "extrakey": true,
+    //"mousekey": true,
+    "nkro": true
+  },
+  "url": "https://github.com/triliu/JESK56",
+  "usb": {
+    "device_version": "1.0.0",
+    "pid": "0x7685",
+    "vid": "0x4273"
+  },
+  "layouts": {
+    "LAYOUT": {
+      "layout": [
+        /*
+          This 'layout; sets out the physical layout of the board.
+          The ordering that appears here will be the same ordering that appears in the keymap.
+          The "matrix" column tells us which pins are associated with the line's particular key.
+          The "label" is just for our own knowledge (and maybe debugging)
+          The "x" and "y" are approximate physical coordinates. This might matter more if we had LEDs?
+          */
+          {"label": "Physical 1 L1",        "matrix": [0, 7],     "x": 0,   "y": 0},
+          {"label": "Physical 1 L2",        "matrix": [14, 21],   "x": 1,   "y": 0},
+          {"label": "Physical 1 L3",        "matrix": [1, 8],     "x": 2,   "y": 0},
+          {"label": "Physical 1 L4",        "matrix": [15, 22],   "x": 3,   "y": 0},
+          {"label": "Physical 1 L5",        "matrix": [2, 9],     "x": 4,   "y": 0},
+          {"label": "Physical 1 L6",        "matrix": [16, 23],   "x": 5,  "y": 0},
+          {"label": "Physical 1 R6",        "matrix": [6, 13],    "x": 11,   "y": 0},
+          {"label": "Physical 1 R5",        "matrix": [19, 26],   "x": 12,  "y": 0},
+          {"label": "Physical 1 R4",        "matrix": [5, 12],    "x": 13,   "y": 0},
+          {"label": "Physical 1 R3",        "matrix": [18, 25],   "x": 14,  "y": 0},
+          {"label": "Physical 1 R2",        "matrix": [4, 11],    "x": 15,   "y": 0},
+          {"label": "Physical 1 R1",        "matrix": [17, 24],   "x": 16,  "y": 0},
+
+          {"label": "Physical 2 L1",        "matrix": [0, 14],    "x": 0,   "y": 2},
+          {"label": "Physical 2 L2",        "matrix": [7, 21],    "x": 1,   "y": 2},
+          {"label": "Physical 2 L3",        "matrix": [1, 15],    "x": 2,   "y": 2},
+          {"label": "Physical 2 L4",        "matrix": [8, 22],    "x": 3,   "y": 2},
+          {"label": "Physical 2 L5",        "matrix": [2, 16],    "x": 4,   "y": 2},
+          {"label": "Physical 2 L6",        "matrix": [9, 23],    "x": 5,   "y": 2},
+          {"label": "Physical 2 L7",        "matrix": [3, 10],    "x": 6,   "y": 2},
+          {"label": "Physical 2 R7",        "matrix": [20, 27],   "x": 10,  "y": 2},
+          {"label": "Physical 2 R6",        "matrix": [6, 20],    "x": 11,   "y": 2},
+          {"label": "Physical 2 R5",        "matrix": [12, 26],   "x": 12,  "y": 2},
+          {"label": "Physical 2 R4",        "matrix": [5, 19],    "x": 13,   "y": 2},
+          {"label": "Physical 2 R3",        "matrix": [11, 25],   "x": 14,  "y": 2},
+          {"label": "Physical 2 R2",        "matrix": [4, 18],    "x": 15,   "y": 2},
+          {"label": "Physical 2 R1",        "matrix": [10, 24],   "x": 16,  "y": 2},
+
+          {"label": "Physical 3 L1",        "matrix": [0, 22],    "x": 0,   "y": 4},
+          {"label": "Physical 3 L2",        "matrix": [7, 15],    "x": 1,   "y": 4},
+          {"label": "Physical 3 L3",        "matrix": [1, 23],    "x": 2,   "y": 4},
+          {"label": "Physical 3 L4",        "matrix": [8, 16],    "x": 3,   "y": 4},
+          {"label": "Physical 3 L5",        "matrix": [2, 24],    "x": 4,   "y": 4},
+          {"label": "Physical 3 L6",        "matrix": [9, 17],    "x": 5,   "y": 4},
+          {"label": "Physical 3 L7",        "matrix": [3, 17],    "x": 6,   "y": 3},
+          {"label": "Physical 3 R7",        "matrix": [13, 27],   "x": 10,  "y": 3},
+          {"label": "Physical 3 R6",        "matrix": [6, 14],    "x": 11,   "y": 4},
+          {"label": "Physical 3 R5",        "matrix": [12, 20],   "x": 12,  "y": 4},
+          {"label": "Physical 3 R4",        "matrix": [5, 27],    "x": 13,   "y": 4},
+          {"label": "Physical 3 R3",        "matrix": [11, 19],   "x": 14,  "y": 4},
+          {"label": "Physical 3 R2",        "matrix": [4, 26],    "x": 15,   "y": 4},
+          {"label": "Physical 3 R1",        "matrix": [10, 18],   "x": 16,  "y": 4},
+
+          {"label": "Physical 4 L1",        "matrix": [0, 24],    "x": 0,   "y": 6},
+          {"label": "Physical 4 L2",        "matrix": [7, 17],    "x": 1,   "y": 6},
+          {"label": "Physical 4 L3",        "matrix": [1, 25],    "x": 2,   "y": 6},
+          {"label": "Physical 4 L4",        "matrix": [8, 18],    "x": 3,   "y": 6},
+          {"label": "Physical 4 L5",        "matrix": [2, 26],    "x": 4,   "y": 6},
+          {"label": "Physical 4 L6",        "matrix": [9, 19],    "x": 5,   "y": 6},
+          {"label": "Physical LThumb LU",   "matrix": [3, 25],    "x": 6,   "y": 7},
+          {"label": "Physical LThumb RU",   "matrix": [3, 20],    "x": 7,   "y": 8},
+          {"label": "Physical RThumb LU",   "matrix": [13, 23],   "x": 9,  "y": 8},
+          {"label": "Physical RThumb RU",   "matrix": [13, 21],   "x": 10,  "y": 7},
+          {"label": "Physical 4 R6",        "matrix": [6, 16],    "x": 11,   "y": 6},
+          {"label": "Physical 4 R5",        "matrix": [12, 22],   "x": 12,  "y": 6},
+          {"label": "Physical 4 R4",        "matrix": [5, 15],    "x": 13,   "y": 6},
+          {"label": "Physical 4 R3",        "matrix": [11, 21],   "x": 14,  "y": 6},
+          {"label": "Physical 4 R2",        "matrix": [4, 14],    "x": 15,   "y": 6},
+          {"label": "Physical 4 R1",        "matrix": [10, 27],   "x": 16,  "y": 6},
+
+          {"label": "Physical 5 L1",        "matrix": [0, 27],    "x": 0,   "y": 8},
+          {"label": "Physical 5 L2",        "matrix": [7, 20],    "x": 1,   "y": 8},
+          {"label": "Physical 5 L3",        "matrix": [1, 14],    "x": 2,   "y": 8},
+          {"label": "Physical 5 L4",        "matrix": [8, 21],    "x": 3,   "y": 8},
+          {"label": "Physical 5 L5",        "matrix": [2, 15],    "x": 4,   "y": 8},
+          {"label": "Physical 5 LThumb LD", "matrix": [9, 22],    "x": 5,   "y": 9},
+          {"label": "Physical 5 LThumb RD", "matrix": [3, 16],    "x": 6,   "y": 10},
+          {"label": "Physical 5 Rthumb LD", "matrix": [13, 26],   "x": 10,  "y": 10},
+          {"label": "Physical 5 RThumb RD", "matrix": [6, 19],    "x": 11,   "y": 9},
+          {"label": "Physical 5 R5",        "matrix": [12, 25],   "x": 12,  "y": 8},
+          {"label": "Physical 5 R4",        "matrix": [5, 18],    "x": 13,   "y": 8},
+          {"label": "Physical 5 R3",        "matrix": [11, 24],   "x": 14,  "y": 8},
+          {"label": "Physical 5 R2",        "matrix": [4, 17],    "x": 15,   "y": 8},
+          {"label": "Physical 5 R1",        "matrix": [10, 23],   "x": 16,  "y": 8}
+
+
+         /* {"label": "Key 8 1",         "matrix": [7, 0],    "x": 7, "y": 0},
+          {"label": "Key 22 15",        "matrix": [21, 14],   "x": 21, "y": 14},
+          {"label": "Key 9 2",         "matrix": [8, 1],    "x": 8, "y": 1},
+          {"label": "Key 23 16",        "matrix": [22, 15],   "x": 22, "y": 15},
+          {"label": "Key 10 3",         "matrix": [9, 2],    "x": 9, "y": 2},
+          {"label": "Key 24 17",        "matrix": [23, 16],   "x": 23, "y": 16},
+          {"label": "Key 11 4",         "matrix": [10, 3],    "x": 10, "y": 3},
+
+          {"label": "Key 14 7",         "matrix": [13, 6],    "x": 13, "y": 6},
+          {"label": "Key 13 6",         "matrix": [12, 5],    "x": 12, "y": 5},
+          {"label": "Key 12 5",         "matrix": [11, 4],    "x": 11, "y": 4},
+          {"label": "Key 15 1",         "matrix": [14, 0],    "x": 14, "y": 0},
+          {"label": "Key 15 2",         "matrix": [14, 1],    "x": 14, "y": 1},
+          {"label": "Key 15 5",         "matrix": [14, 4],    "x": 14, "y": 4},
+          {"label": "Key 15 7",         "matrix": [14, 6],    "x": 14, "y": 6},
+          {"label": "Key 16 2",         "matrix": [15, 1],    "x": 15, "y": 1},
+          {"label": "Key 16 3",         "matrix": [15, 2],    "x": 15, "y": 2},
+          {"label": "Key 16 6",         "matrix": [15, 5],    "x": 15, "y": 5},
+          {"label": "Key 16 8",         "matrix": [15, 7],    "x": 15, "y": 7},
+          {"label": "Key 17 3",         "matrix": [16, 2],    "x": 16, "y": 2},
+          {"label": "Key 17 4",         "matrix": [16, 3],    "x": 16, "y": 3},
+          {"label": "Key 17 7",         "matrix": [16, 6],    "x": 16, "y": 6},
+          {"label": "Key 17 9",         "matrix": [16, 8],    "x": 16, "y": 8},
+          {"label": "Key 18 4",         "matrix": [17, 3],    "x": 17, "y": 3},
+          {"label": "Key 18 5",         "matrix": [17, 4],    "x": 17, "y": 4},
+          {"label": "Key 18 8",         "matrix": [17, 7],    "x": 17, "y": 7},
+          {"label": "Key 18 10",        "matrix": [17, 9],   "x": 17, "y": 9},
+          {"label": "Key 19 5",         "matrix": [18, 4],    "x": 18, "y": 4},
+          {"label": "Key 19 6",         "matrix": [18, 5],    "x": 18, "y": 5},
+          {"label": "Key 19 9",         "matrix": [18, 8],    "x": 18, "y": 8},
+          {"label": "Key 19 11",        "matrix": [18, 10],   "x": 18, "y": 10},
+          {"label": "Key 20 6",         "matrix": [19, 5],    "x": 19, "y": 5},
+          {"label": "Key 20 7",         "matrix": [19, 6],    "x": 19, "y": 6},
+          {"label": "Key 20 10",        "matrix": [19, 9],   "x": 19, "y": 9},
+          {"label": "Key 20 12",        "matrix": [19, 11],   "x": 19, "y": 11},
+          {"label": "Key 21 4",         "matrix": [20, 3],    "x": 20, "y": 3},
+          {"label": "Key 21 7",         "matrix": [20, 6],    "x": 20, "y": 6},
+          {"label": "Key 21 8",         "matrix": [20, 7],    "x": 20, "y": 7},
+          {"label": "Key 21 13",        "matrix": [20, 12],   "x": 20, "y": 12},
+          {"label": "Key 22 8",         "matrix": [21, 7],    "x": 21, "y": 7},
+          {"label": "Key 22 9",         "matrix": [21, 8],    "x": 21, "y": 8},
+          {"label": "Key 22 12",        "matrix": [21, 11],   "x": 21, "y": 11},
+          {"label": "Key 22 14",        "matrix": [21, 13],   "x": 21, "y": 13},
+          {"label": "Key 23 1",         "matrix": [22, 0],    "x": 22, "y": 0},
+          {"label": "Key 23 9",         "matrix": [22, 8],    "x": 22, "y": 8},
+          {"label": "Key 23 10",        "matrix": [22, 9],   "x": 22, "y": 9},
+          {"label": "Key 23 13",        "matrix": [22, 12],   "x": 22, "y": 12},
+          {"label": "Key 24 2",         "matrix": [23, 1],    "x": 23, "y": 1},
+          {"label": "Key 24 10",        "matrix": [23, 9],   "x": 23, "y": 9},
+          {"label": "Key 24 11",        "matrix": [23, 10],   "x": 23, "y": 10},
+          {"label": "Key 24 14",        "matrix": [23, 13],   "x": 23, "y": 13},
+          {"label": "Key 25 1",         "matrix": [24, 0],    "x": 24, "y": 0},
+          {"label": "Key 25 3",         "matrix": [24, 2],    "x": 24, "y": 2},
+          {"label": "Key 25 11",        "matrix": [24, 10],   "x": 24, "y": 10},
+          {"label": "Key 25 12",        "matrix": [24, 11],   "x": 24, "y": 11},
+          {"label": "Key 25 18",        "matrix": [24, 17],   "x": 24, "y": 17},
+          {"label": "Key 26 2",         "matrix": [25, 1],    "x": 25, "y": 1},
+          {"label": "Key 26 4",         "matrix": [25, 3],    "x": 25, "y": 3},
+          {"label": "Key 26 12",        "matrix": [25, 11],   "x": 25, "y": 11},
+          {"label": "Key 26 13",        "matrix": [25, 12],   "x": 25, "y": 12},
+          {"label": "Key 26 19",        "matrix": [25, 18],   "x": 25, "y": 18},
+          {"label": "Key 27 3",         "matrix": [26, 2],    "x": 26, "y": 2},
+          {"label": "Key 27 5",         "matrix": [26, 4],    "x": 26, "y": 4},
+          {"label": "Key 27 13",        "matrix": [26, 12],   "x": 26, "y": 12},
+          {"label": "Key 27 14",        "matrix": [26, 13],   "x": 26, "y": 13},
+          {"label": "Key 27 20",        "matrix": [26, 19],   "x": 26, "y": 19},
+          {"label": "Key 28 1",         "matrix": [27, 0],    "x": 27, "y": 0},
+          {"label": "Key 28 6",         "matrix": [27, 5],    "x": 27, "y": 5},
+          {"label": "Key 28 11",        "matrix": [27, 10],   "x": 27, "y": 10},
+          {"label": "Key 28 14",        "matrix": [27, 13],   "x": 27, "y": 13},
+          {"label": "Key 28 21",        "matrix": [27, 20],   "x": 27, "y": 20}
+          */
+
+
+
+
+        /*
+        {"label": "Key ESC",         "matrix": [14, 7],    "x": 0, "y": 0},  //GP18 = col 0
+        {"label": "Key 1",           "matrix": [14, 8],    "x": 1, "y": 0},  //GP24  = col 1
+         {"label": "Key 2",           "matrix": [14, 9],    "x": 2, "y": 0},  //GP10 = col 4
+         {"label": "Key 3",           "matrix": [14, 10],    "x": 3, "y": 0},   //GP0   = col 6
+         {"label": "Key 4",           "matrix": [14, 11],    "x": 4, "y": 0},    //GP1 = col 9
+         {"label": "Key 5",           "matrix": [14, 12],    "x": 5, "y": 0},    //GP2 = col 12
+         {"label": "Key LeftUpper1",  "matrix": [14, 13],    "x": 6, "y": 0},    //GP2 = col 12
+         {"label": "Key RightUpper1", "matrix": [14, 0],    "x": 7, "y": 0},    //GP2 = col 12
+         {"label": "Key 6",           "matrix": [14, 1],    "x": 8, "y": 0},    //GP28 = col 8
+         {"label": "Key 7",           "matrix": [14, 2],    "x": 9, "y": 0},    //GP27 = col 7
+         {"label": "Key 8",           "matrix": [14, 3],    "x": 10, "y": 0},    //GP26 = col 13
+         {"label": "Key 9",           "matrix": [14, 4],    "x": 11, "y": 0},    //GP22 = col 11
+         {"label": "Key 0",           "matrix": [14, 5],    "x": 12, "y": 0},    //GP22 = col 11
+         {"label": "Key BSPCE",       "matrix": [14, 6],    "x": 13, "y": 0},    //GP22 = col 11
+        //{"label": "Key 1",           "matrix": [15, 8],    "x": 1, "y": 0},  //GP24  = col 1
+        // {"label": "Key 2",           "matrix": [16, 9],    "x": 2, "y": 0},  //GP10 = col 4
+        // {"label": "Key 3",           "matrix": [17, 10],    "x": 3, "y": 0},   //GP0   = col 6
+        // {"label": "Key 4",           "matrix": [18, 11],    "x": 4, "y": 0},    //GP1 = col 9
+        // {"label": "Key 5",           "matrix": [19, 12],    "x": 5, "y": 0},    //GP2 = col 12
+       //  {"label": "Key LeftUpper1",  "matrix": [20, 13],    "x": 6, "y": 0},    //GP2 = col 12
+      //   {"label": "Key RightUpper1", "matrix": [0, 21],    "x": 7, "y": 0},    //GP2 = col 12
+     //    {"label": "Key 6",           "matrix": [1, 22],    "x": 8, "y": 0},    //GP28 = col 8
+    //     {"label": "Key 7",           "matrix": [2, 23],    "x": 9, "y": 0},    //GP27 = col 7
+   //      {"label": "Key 8",           "matrix": [3, 24],    "x": 10, "y": 0},    //GP26 = col 13
+  //       {"label": "Key 9",           "matrix": [4, 25],    "x": 11, "y": 0},    //GP22 = col 11
+ //        {"label": "Key 0",           "matrix": [5, 26],    "x": 12, "y": 0},    //GP22 = col 11
+//         {"label": "Key BSPCE",       "matrix": [6, 27],    "x": 13, "y": 0},    //GP22 = col 11
+
+        {"label": "Key Tab",         "matrix": [0, 0],   "x": 0, "y": 0},  //GP18 = col 0
+        {"label": "Key Q",           "matrix": [7, 7],   "x": 1, "y": 0},  //GP24  = col 1
+        {"label": "Key W",           "matrix": [1, 1],   "x": 2, "y": 0},  //GP10 = col 4
+        {"label": "Key E",           "matrix": [8, 8],   "x": 3, "y": 0},   //GP0   = col 6
+        {"label": "Key R",           "matrix": [2, 2],   "x": 4, "y": 0},    //GP1 = col 9
+        {"label": "Key T",           "matrix": [9, 9],   "x": 5, "y": 0},    //GP2 = col 12
+        {"label": "Key LeftUpper2",  "matrix": [3, 3],   "x": 6, "y": 0},    //GP2 = col 12
+        {"label": "Key RightUpper2", "matrix": [13, 13], "x": 7, "y": 0},    //GP2 = col 12
+        {"label": "Key Y",           "matrix": [6, 6],   "x": 8, "y": 0},    //GP28 = col 8
+        {"label": "Key U",           "matrix": [12, 12], "x": 9, "y": 0},    //GP27 = col 7
+        {"label": "Key I",           "matrix": [5, 5],   "x": 10, "y": 0},    //GP26 = col 13
+        {"label": "Key O",           "matrix": [11, 11], "x": 11, "y": 0},    //GP22 = col 11
+        {"label": "Key P",           "matrix": [4, 4],   "x": 12, "y": 0},    //GP22 = col 11
+        {"label": "Key BSLSH",       "matrix": [10, 10], "x": 13, "y": 0},    //GP22 = col 11
+
+        {"label": "Key CPSLK",          "matrix": [8, 0], "x": 0, "y": 1}, //GP18  = col 0
+        {"label": "Key A",              "matrix": [1, 7], "x": 1, "y": 1},   //GP24  = col 1
+        {"label": "Key S",              "matrix": [9, 1], "x": 2, "y": 1},  //GP10     = col 4
+        {"label": "Key D",              "matrix": [2, 8], "x": 3, "y": 1},    //GP0   = col 6
+        {"label": "Key F",              "matrix": [10, 2], "x": 4, "y": 1},    //GP1 = col 9
+        {"label": "Key G",              "matrix": [3, 9], "x": 5, "y": 1},    //GP2 = col 12
+        {"label": "Key LeftThumbTop",   "matrix": [11, 3], "x": 6, "y": 1},    //GP2 = col 12
+        {"label": "Key RightThumbTop",  "matrix": [7, 13], "x": 7, "y": 1},    //GP2 = col 12
+        {"label": "Key H",              "matrix": [0, 6], "x": 8, "y": 1},    //GP11 = col 3
+        {"label": "Key J",              "matrix": [6, 12], "x": 9, "y": 1},    //GP29 = col 10
+        {"label": "Key K",              "matrix": [13, 5], "x": 10, "y": 1},    //GP28 = col 8
+        {"label": "Key L",              "matrix": [5, 11], "x": 11, "y": 1},    //GP27 = col 7
+        {"label": "Key ;",              "matrix": [12, 4], "x": 12, "y": 1},    //GP26 = col 13
+        {"label": "Key Enter",          "matrix": [4, 10], "x": 13, "y": 1},   //GP22 = col 11
+
+        {"label": "Key Left Shift", "matrix": [10, 0], "x": 0, "y": 2},//GP18  = col 0
+        {"label": "Key Z", "matrix": [3, 7], "x": 1, "y": 2},  //GP24  = col 1
+        {"label": "Key X", "matrix": [11, 1], "x": 2, "y": 2},  //GP10 = col 4
+        {"label": "Key C", "matrix": [4, 8], "x": 3, "y": 2},   //GP0   = col 6
+        {"label": "Key V", "matrix": [12, 2], "x": 4, "y": 2},    //GP1   = col 9
+        {"label": "Key B", "matrix": [5, 9], "x": 5, "y": 2},        //GP2 = col 12
+        {"label": "Key N", "matrix": [2, 6], "x": 8, "y": 2},    //GP11 = col 3
+        {"label": "Key M", "matrix": [8, 12], "x": 9, "y": 2},    //GP29 = col 10
+        {"label": "Key ,", "matrix": [1, 5], "x": 10, "y": 2},    //GP28 = col 8
+        {"label": "Key .", "matrix": [7, 11], "x": 11, "y": 2},    //GP27 = col 7
+        {"label": "Key /", "matrix": [0, 4], "x": 12, "y": 2},    //GP26 = col 13
+        {"label": "Key Quotation", "matrix": [13, 10], "x": 13, "y": 2},   //GP22 = col 11
+
+        {"label": "Key L1",                 "matrix": [13, 0], "x": 0, "y": 3},//GP18  = col 0
+        {"label": "Key L2",                 "matrix": [6, 7], "x": 1, "y": 3},  //GP24  = col 1
+        {"label": "Key L3",                 "matrix": [0, 1], "x": 2, "y": 3},  //GP10 = col 4
+        {"label": "Key L4",                 "matrix": [7, 8], "x": 3, "y": 3},   //GP0   = col 6
+        {"label": "Key L5",                 "matrix": [1, 2], "x": 4, "y": 3},    //GP1   = col 9
+        {"label": "Key LeftThumbLeft",      "matrix": [8, 9], "x": 5, "y": 3},        //GP2 = col 12
+        {"label": "Key LeftThumbDown",      "matrix": [2, 3], "x": 6, "y": 3},        //GP2 = col 12
+        {"label": "Key RightThumbDown",     "matrix": [12, 13], "x": 7, "y": 3},        //GP2 = col 12
+        {"label": "Key RightThumbRight",    "matrix": [5, 6], "x": 8, "y": 3},        //GP2 = col 12
+        {"label": "Key L7",                 "matrix": [11, 12], "x": 9, "y": 3},    //GP11 = col 3
+        {"label": "Key L8",                 "matrix": [4, 5], "x": 10, "y": 3},    //GP29 = col 10
+        {"label": "Key L9",                 "matrix": [10, 11], "x": 11, "y": 3},    //GP28 = col 8
+        {"label": "Key L10",                "matrix": [3, 4], "x": 12, "y": 3},    //GP27 = col 7
+        {"label": "Key L11",                "matrix": [9, 10], "x": 13, "y": 3},    //GP26 = col 13*/
+      ]
+    }
+  }
+}
+
+
+
+
+//         {"label": "Key Esc", "matrix": [0, 0], "x": 0, "y": 0},
+//         {"label": "Key 1", "matrix": [0, 1], "x": 1, "y": 0},
+//         {"label": "Key 2", "matrix": [0, 2], "x": 2, "y": 0},
+//         {"label": "Key 3", "matrix": [0, 3], "x": 3, "y": 0},
+//         {"label": "Key 4", "matrix": [2, 4], "x": 4, "y": 0},
+//         {"label": "Key 5", "matrix": [2, 5], "x": 5, "y": 0},
+//         {"label": "Key 6", "matrix": [8, 8], "x": 7, "y": 0},
+//         {"label": "Key 7", "matrix": [9, 9], "x": 8, "y": 0},
+//         {"label": "Key 8", "matrix": [1, 10], "x": 9, "y": 0},
+//         {"label": "Key 9", "matrix": [1, 11], "x": 10, "y": 0},
+//         {"label": "Key 0", "matrix": [1, 12], "x": 11, "y": 0},
+//         {"label": "Key Backspace", "matrix": [1, 13], "x": 12, "y": 0},
+
+//         {"label": "Key Tab", "matrix": [2, 0], "x": 0, "y": 0},
+//         {"label": "Key Q", "matrix": [10, 1], "x": 1, "y": 0},
+//         {"label": "Key W", "matrix": [8, 2], "x": 2, "y": 0},
+//         {"label": "Key E", "matrix": [9, 3], "x": 3, "y": 0},
+//         {"label": "Key R", "matrix": [8, 4], "x": 4, "y": 0},
+//         {"label": "Key T", "matrix": [9, 5], "x": 5, "y": 0},
+//         {"label": "Key Y", "matrix": [10, 8], "x": 7, "y": 0},
+//         {"label": "Key U", "matrix": [11, 9], "x": 8, "y": 0},
+//         {"label": "Key I", "matrix": [2, 10], "x": 9, "y": 0},
+//         {"label": "Key O", "matrix": [9, 11], "x": 10, "y": 0},
+//         {"label": "Key P", "matrix": [11, 12], "x": 10, "y": 0},
+//         {"label": "Key Backslash", "matrix": [10, 13], "x": 11, "y": 0},
+
+//         {"label": "Key Left Shift", "matrix": [6, 0], "x": 0, "y": 1},
+//         {"label": "Key A", "matrix": [11, 1], "x": 1, "y": 1},
+//         {"label": "Key S", "matrix": [13, 2], "x": 2, "y": 1},
+//         {"label": "Key D", "matrix": [12, 3], "x": 3, "y": 1},
+//         {"label": "Key F", "matrix": [11, 4], "x": 4, "y": 1},
+//         {"label": "Key G", "matrix": [10, 5], "x": 5, "y": 1},
+//         {"label": "Key H", "matrix": [5, 8], "x": 6, "y": 1},
+//         {"label": "Key J", "matrix": [6, 9], "x": 7, "y": 1},
+//         {"label": "Key K", "matrix": [4, 10], "x": 8, "y": 1},
+//         {"label": "Key L", "matrix": [8, 11], "x": 9, "y": 1},
+//         {"label": "Key ;", "matrix": [13, 12], "x": 10, "y": 1},
+//         {"label": "Key Quotation", "matrix": [12, 13], "x": 11, "y": 1},
+
+//         {"label": "Key Left Ctrl", "matrix": [5, 0], "x": 0, "y": 2},
+//         {"label": "Key Z", "matrix": [7, 1], "x": 1, "y": 2},
+//         {"label": "Key X", "matrix": [4, 2], "x": 2, "y": 2},
+//         {"label": "Key C", "matrix": [3, 3], "x": 3, "y": 2},
+//         {"label": "Key V", "matrix": [12, 4], "x": 4, "y": 2},
+//         {"label": "Key B", "matrix": [13, 5], "x": 5, "y": 2},
+//         {"label": "Key N", "matrix": [3, 8], "x": 6, "y": 2},
+//         {"label": "Key M", "matrix": [4, 9], "x": 7, "y": 2},
+//         {"label": "Key ,", "matrix": [3, 10], "x": 8, "y": 2},
+//         {"label": "Key .", "matrix": [7, 11], "x": 9, "y": 2},
+//         {"label": "Key /", "matrix": [5, 12], "x": 10, "y": 2},
+//         {"label": "Key Bottom-Right", "matrix": [6, 13], "x": 11, "y": 2},
+
+//         {"label": "Key Thumb 1", "matrix": [7, 6], "x": 0, "y": 2.5},
+//         {"label": "Key Thumb 2", "matrix": [6, 6], "x": 3.5, "y": 4.15},
+//         {"label": "Key Thumb 3", "matrix": [3, 6], "x": 4, "y": 0.125},
+//         {"label": "Key Space 1", "matrix": [13, 6], "x": 11, "y": 4.25},
+//         {"label": "Key Space 2", "matrix": [7, 7], "x": 11, "y": 4.25},
+//         {"label": "Key Thumb 4", "matrix": [5, 7], "x": 11, "y": 4.25},
+//         {"label": "Key Thumb 5", "matrix": [4, 7], "x": 12, "y": 4.15},
+//         {"label": "Key Thumb 6", "matrix": [12, 7], "x": 13, "y": 4.15}
+//       ]
+//     }
+//   }
+// }
+
+
+
+
+
+
+
+
+
+
+        // {"label": "Key Esc", "matrix": [0, 0], "x": 0, "y": 0},  //GP18 = col 0
+        // {"label": "Key 1", "matrix": [0, 1], "x": 1, "y": 0},  //GP24  = col 1
+        // {"label": "Key 2", "matrix": [0, 4], "x": 2, "y": 0},  //GP10 = col 4
+        // {"label": "Key 3", "matrix": [0, 6], "x": 3, "y": 0},   //GP0   = col 6
+        // {"label": "Key 4", "matrix": [2, 9], "x": 4, "y": 0},    //GP1 = col 9
+        // {"label": "Key 5", "matrix": [2, 12], "x": 5, "y": 0},    //GP2 = col 12
+        // {"label": "Key 6", "matrix": [8, 3], "x": 7, "y": 0},    //GP11 = col 3
+        // {"label": "Key 7", "matrix": [9, 10], "x": 8, "y": 0},    //GP29 = col 10
+        // {"label": "Key 8", "matrix": [1, 8], "x": 9, "y": 0},    //GP28 = col 8
+        // {"label": "Key 9", "matrix": [1, 7], "x": 10, "y": 0},    //GP27 = col 7
+        // {"label": "Key 0", "matrix": [1, 13], "x": 11, "y": 0},    //GP26 = col 13
+        // {"label": "Key Backspace", "matrix": [1, 11], "x": 12, "y": 0},    //GP22 = col 11
+
+        // {"label": "Key Tab", "matrix": [2, 0], "x": 0, "y": 0}, //GP18  = col 0
+        // {"label": "Key Q", "matrix": [10, 1], "x": 1, "y": 0},   //GP24  = col 1
+        // {"label": "Key W", "matrix": [8, 4], "x": 2, "y": 0},  //GP10     = col 4
+        // {"label": "Key E", "matrix": [9, 6], "x": 3, "y": 0},    //GP0   = col 6
+        // {"label": "Key R", "matrix": [8, 9], "x": 4, "y": 0},    //GP1 = col 9
+        // {"label": "Key T", "matrix": [9, 12], "x": 5, "y": 0},    //GP2 = col 12
+        // {"label": "Key Y", "matrix": [10, 3], "x": 7, "y": 0},    //GP11 = col 3
+        // {"label": "Key U", "matrix": [11, 10], "x": 8, "y": 0},    //GP29 = col 10
+        // {"label": "Key I", "matrix": [2, 8], "x": 9, "y": 0},    //GP28 = col 8
+        // {"label": "Key O", "matrix": [9, 7], "x": 10, "y": 0},    //GP27 = col 7
+        // {"label": "Key P", "matrix": [11, 13], "x": 10, "y": 0},    //GP26 = col 13
+        // {"label": "Key Backslash", "matrix": [10, 11], "x": 11, "y": 0},   //GP22 = col 11
+
+        // {"label": "Key Left Shift", "matrix": [6, 0], "x": 0, "y": 1},//GP18  = col 0
+        // {"label": "Key A", "matrix": [11, 1], "x": 1, "y": 1},  //GP24  = col 1
+        // {"label": "Key S", "matrix": [13, 4], "x": 2, "y": 1},  //GP10 = col 4
+        // {"label": "Key D", "matrix": [12, 6], "x": 3, "y": 1},   //GP0   = col 6
+        // {"label": "Key F", "matrix": [11, 9], "x": 4, "y": 1},    //GP1   = col 9
+        // {"label": "Key G", "matrix": [10, 12], "x": 5, "y": 1},        //GP2 = col 12
+        // {"label": "Key H", "matrix": [5, 3], "x": 6, "y": 1},    //GP11 = col 3
+        // {"label": "Key J", "matrix": [6, 10], "x": 7, "y": 1},    //GP29 = col 10
+        // {"label": "Key K", "matrix": [4, 8], "x": 8, "y": 1},    //GP28 = col 8
+        // {"label": "Key L", "matrix": [8, 7], "x": 9, "y": 1},    //GP27 = col 7
+        // {"label": "Key ;", "matrix": [13, 13], "x": 10, "y": 1},    //GP26 = col 13
+        // {"label": "Key Quotation", "matrix": [12, 11], "x": 11, "y": 1},   //GP22 = col 11
+
+        // {"label": "Key Left Ctrl", "matrix": [5, 0], "x": 0, "y": 2},//GP18  = col 0
+        // {"label": "Key Z", "matrix": [7, 1], "x": 1, "y": 2},  //GP24  = col 1
+        // {"label": "Key X", "matrix": [4, 4], "x": 2, "y": 2},  //GP10 = col 4
+        // {"label": "Key C", "matrix": [3, 6], "x": 3, "y": 2},   //GP0   = col 6
+        // {"label": "Key V", "matrix": [12, 9], "x": 4, "y": 2},    //GP1   = col 9
+        // {"label": "Key B", "matrix": [13, 12], "x": 5, "y": 2},        //GP2 = col 12
+        // {"label": "Key N", "matrix": [3, 3], "x": 6, "y": 2},    //GP11 = col 3
+        // {"label": "Key M", "matrix": [4, 10], "x": 7, "y": 2},    //GP29 = col 10
+        // {"label": "Key ,", "matrix": [3, 8], "x": 8, "y": 2},    //GP28 = col 8
+        // {"label": "Key .", "matrix": [7, 7], "x": 9, "y": 2},    //GP27 = col 7
+        // {"label": "Key /", "matrix": [5, 13], "x": 10, "y": 2},    //GP26 = col 13
+        // {"label": "Key Bottom-Right", "matrix": [6, 11], "x": 11, "y": 2},   //GP22 = col 11
+
+        // {"label": "Key Thumb 1", "matrix": [7, 2], "x": 0, "y": 2.5},     //GP25 = col 2
+        // {"label": "Key Thumb 2", "matrix": [6, 2], "x": 3.5, "y": 4.15},  //GP25 = col 2
+        // {"label": "Key Thumb 3", "matrix": [3, 2], "x": 4, "y": 0.125},   //GP25 = col 2
+        // {"label": "Key Space 1", "matrix": [13, 2], "x": 11, "y": 4.25},  //GP25 = col 2
+        // {"label": "Key Space 2", "matrix": [7, 5], "x": 11, "y": 4.25},   //GP16 = col 5
+        // {"label": "Key Thumb 4", "matrix": [5, 5], "x": 11, "y": 4.25},   //GP16 = col 5
+        // {"label": "Key Thumb 5", "matrix": [4, 5], "x": 12, "y": 4.15},   //GP16 = col 5
+        // {"label": "Key Thumb 6", "matrix": [12, 5], "x": 13, "y": 4.15}   //GP16 = col 5

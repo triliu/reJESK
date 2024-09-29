@@ -1,0 +1,8 @@
+{
+  "bootloader": "rp2040",
+  "matrix_pins": {
+    "cols": ["GP24", "GP29", "GP27", "GP26", "GP3", "GP1", "GP10", "GP18", "GP28", "GP11", "GP4", "GP2", "GP0", "GP5","GP13", "GP9", "GP7", "GP22", "GP20", "GP21", "GP25", "GP16", "GP15", "GP8", "GP6", "GP12", "GP23", "GP14"],
+    "rows": ["GP24", "GP29", "GP27", "GP26", "GP3", "GP1", "GP10", "GP18", "GP28", "GP11", "GP4", "GP2", "GP0", "GP5","GP13", "GP9", "GP7", "GP22", "GP20", "GP21", "GP25", "GP16", "GP15", "GP8", "GP6", "GP12", "GP23", "GP14"]
+  },
+  "processor": "RP2040"
+}
